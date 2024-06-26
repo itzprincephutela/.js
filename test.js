@@ -6,6 +6,4 @@ accountCity = "sirsa"
 
 accountEmail ="next@gmail.com"
 accountPassword="54321"
-let accountdetail;
-console.log(accountId);
 console.table([accountId,accountEmail,accountPassword,accountCity ,accountdetail]);
