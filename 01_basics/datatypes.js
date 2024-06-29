@@ -1,4 +1,4 @@
-//  Primitive
+//  Primitive//copy hue chij tranfer hoti hai
 
 //  7 types : String, Number, Boolearn, null, undefined, Symbol, BigInt
 
@@ -18,7 +18,7 @@ console.log(id === anotherId);
 
 
 
-// Reference (Non primitive)
+// Reference (Non primitive) //address tranfer hota hai 
 
 // Array, Objects, Functions
 
@@ -29,9 +29,20 @@ let myObj = {
 }
 
 const myFunction = function(){
-    console.log("Hello world");
+    //console.log("Hello world");
 }
 
-console.log(typeof anotherId);
+//console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+
+
+// stack is use in primitive And heap is used in non-primitive
+
+let youtube = "GLEAMPOINT";
+let anothername = youtube;
+anothername="HELLO";
+console.log(youtube);
+console.log(anothername);
