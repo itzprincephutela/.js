@@ -5,3 +5,4 @@ let age = 15
 let isLoggedIn = true 
 console.log(typeof age)
 console.log(typeof null)
+console.log(typeof isLoggedIn)
