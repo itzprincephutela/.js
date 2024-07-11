@@ -8,6 +8,7 @@ console.log(typeof valueInNumber);
 console.log(valueInNumber);
 // "55" = 55 
 // "33abc "= NAN
+// "prince"=String
 // true  = 1
 // false  = 0 
 
