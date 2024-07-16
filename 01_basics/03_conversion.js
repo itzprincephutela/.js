@@ -8,6 +8,8 @@ console.log(typeof valueInNumber);
 console.log(valueInNumber);
 // "55" = 55 
 // "33abc "= NAN
+// "prince"=String
+// "kumar"=String
 // true  = 1
 // false  = 0 
 
@@ -17,7 +19,7 @@ console.log(boolenislogedin)
 
 
 
-
+//
 let somenumber = 33 
 let stringIsSomeNumber = String(somenumber)
 console.log(typeof somenumber)
