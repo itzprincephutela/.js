@@ -8,7 +8,7 @@ const jsuser = {
     age :18,
     location:"sirsa"
 }
-// console.log(jsuser.name)
+console.log(jsuser.name)
 // console.log(jsuser.fullname)
 // console.log(jsuser["fullname"])
 // console.log(jsuser["location"])
