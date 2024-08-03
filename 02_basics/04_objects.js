@@ -1,29 +1,29 @@
-// // const tinderuser = new Object();
-// const tinderuser = {}
+// const tinderuser = new Object();
+const tinderuser = {}
 
-// tinderuser.id="ABC";
-// tinderuser.name="Prince";
+tinderuser.id="ABC";
+tinderuser.name="Prince";
 
-// // console.log(tinderuser);
-
-
-// const obj1 = {1:"a",2:"f"};
-// const obj2 = {7:"g",5:"K"};
-// //   merje kase kre 3 type 
-// // const obj3 = {obj1,obj2};
-// // console.log(obj3);//this is not a right way
-
-// // const  obj3 = Object.assign({},obj1,obj2);
-// // console.log(obj3);
+// console.log(tinderuser);
 
 
-// const obj3 = {...obj1,...obj2};
-// // console.log(obj3);
+const obj1 = {1:"a",2:"f"};
+const obj2 = {7:"g",5:"K"};
+//   merje kase kre 3 type 
+// const obj3 = {obj1,obj2};
+// console.log(obj3);//this is not a right way
+
+// const  obj3 = Object.assign({},obj1,obj2);
+// console.log(obj3);
 
 
-// console.log(Object.keys(tinderuser));
-// console.log(Object.values(tinderuser));
-// // console.log(tinderuser.id('e'));
+const obj3 = {...obj1,...obj2};
+// console.log(obj3);
+
+
+console.log(Object.keys(tinderuser));
+console.log(Object.values(tinderuser));
+// console.log(tinderuser.id('e'));
 
 
 
@@ -40,3 +40,17 @@ else if(age > 12 && age<19){
 else{
     console.log("Adult")
 }
+
+
+
+ const course ={
+    coursename : "Js hindi",
+    price: "999",
+    courseinstrutor : "Prince"
+ }
+//  course.courseinstrutor
+const{courseinstrutor:inst} = course
+console.log(inst);
+
+
+console.log(Object.entries(course));

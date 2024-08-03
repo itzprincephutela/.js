@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Practice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>DOM Manipulation Practice</h1>
+
+    <button id="changeColorButton">Change Background Color</button>
+    <button id="addItemButton">Add List Item</button>
+    <button id="toggleClassButton">Toggle Highlight</button>
+
+    <ul id="itemList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <p id="message">Click the buttons above to manipulate the DOM.</p>
+
+    <script src="app.js">
+        // JavaScript for DOM manipulation
+
+        // Change background color of the body
+        document.getElementById('changeColorButton').addEventListener('click', function() {
+            document.body.style.backgroundColor = document.body.style.backgroundColor === 'lightblue' ? 'white' : 'lightblue';
+        });
+
+        // Add a new item to the list
+        document.getElementById('addItemButton').addEventListener('click', function() {
+            var newItem = document.createElement('li');
+            newItem.textContent = 'New Item';
+            document.getElementById('itemList').appendChild(newItem);
+        });
+
+        // Toggle highlight class on paragraph
+        document.getElementById('toggleClassButton').addEventListener('click', function() {
+            var message = document.getElementById('message');
+            message.classList.toggle('highlight');
+        });
+        
+    </script>
+
+</body>
+</html>
