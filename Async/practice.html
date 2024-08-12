@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hi i am prince kumar</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    let intervalId; // To store the interval ID
+
+    const say = function(){
+        console.log("qwertyuiop");
+    }
+
+    const startcode = function(){
+        document.querySelector('#start').addEventListener("click", function(){
+            if (!intervalId) { // Prevent multiple intervals
+                intervalId = setInterval(say, 2000);
+            }
+        });
+    }
+
+    const stopcode = function(){
+        document.querySelector('#stop').addEventListener("click", function(){
+            clearInterval(intervalId);
+            intervalId = null; // Reset the interval ID
+            console.log("Interval stopped");
+        });
+    }
+
+    // Call the functions to attach event listeners
+    startcode();
+    stopcode();
+
+</script>
+</html>

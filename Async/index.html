@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Hi I am Prince Kumar </h1>
+    <button id="stop">Stop</button>
+
+</body>
+<script>
+    const sayhi = function () {
+        console.log("This is practice sheet"); +
+    }
+    const changeh1 = function(){
+        document.querySelector('h1').innerHTML="This is practice Sheet";
+    }
+    // setTimeout(sayhi, 2000); 
+
+    const changeme= setTimeout(changeh1, 2000);
+        document.querySelector('#stop').addEventListener("click",function(){
+            clearTimeout(changeh1)
+                console.log("itsWorking");
+        })
+</script>
+
+</html>
