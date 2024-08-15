@@ -4,7 +4,7 @@ const tinderuser = {}
 tinderuser.id="ABC";
 tinderuser.name="Prince";
 
-// console.log(tinderuser);
+// console.log(tinderuser);!!!
 
 
 const obj1 = {1:"a",2:"f"};
