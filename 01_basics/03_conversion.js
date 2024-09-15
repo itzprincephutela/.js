@@ -7,7 +7,7 @@ let valueInNumber =Number(score)
 console.log(typeof valueInNumber);
 console.log(valueInNumber);
 // "55" = 55 
-// "33abc "= NAN
+// "33abc "= NAN;
 // "prince"=String
 // "kumar"=String
 // true  = 1
